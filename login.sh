@@ -1,8 +1,7 @@
 #!/bin/bash
 
-#id="" 
 function containerId {
-    id=`docker ps |grep anduin |awk '{print $1}'`
+    id=`docker ps |grep ${1} |awk '{print $1}'`
     echo ${id}
 }
 
